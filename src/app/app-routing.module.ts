@@ -13,7 +13,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'resetok',
+    loadChildren: () => import('./resetok/resetok.module').then( m => m.ResetokPageModule)
   }
+
 ];
 @NgModule({
   imports: [
