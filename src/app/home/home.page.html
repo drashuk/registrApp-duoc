@@ -1,8 +1,5 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tab1"></ion-back-button>
-    </ion-buttons>
     <ion-title>Registro Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -27,14 +24,13 @@
     </ion-label>
     <h5 class="ion-text-center">{{estudiante.seccion}}</h5>
   </div>
-  <BR>
-  <BR>
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" [routerLink]="['/inicsesion']">
+    Cerrar Sesión
+  </ion-button>
   <BR>
   <h6 class="ion-text-center">Escanear QR</h6>
     <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-      
-
-    <ion-fab-button (click)="addPhotoToGallery()">
+    <ion-fab-button (click)="onClick()">
       <ion-icon name="camera" color="light"></ion-icon>
     </ion-fab-button>
   </ion-fab>

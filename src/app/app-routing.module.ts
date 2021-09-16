@@ -4,7 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    redirectTo: 'inicsesion',
+    pathMatch: 'full'
   },
   {
     path: 'resetpassword',
@@ -13,9 +14,14 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'resetok',
     loadChildren: () => import('./resetok/resetok.module').then( m => m.ResetokPageModule)
+  },
+  {
+    path: 'inicsesion',
+    loadChildren: () => import('./inicsesion/inicsesion.module').then( m => m.InicsesionPageModule)
   }
 
 ];
