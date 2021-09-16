@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-title size="large" style="text-align: center">Bienvenid@, {{nombre}} </ion-title>
+  <br>
+  <ion-img src="assets/img/avatar.jpg" style="width:150px center; height:150px"></ion-img>
+  <br>
+  <div *ngFor="let estudiante of listado">
+    <ion-label class="ion-text-center">
+      <p>Nombre del Alumno:</p>
+    </ion-label>
+    <h5 class="ion-text-center">{{estudiante.nombre}}</h5>
+    <ion-label class="ion-text-center">
+      <p>Sede del Alumno:</p>
+    </ion-label>
+    <h5 class="ion-text-center">{{estudiante.sede}}</h5>
+    <ion-label class="ion-text-center">
+      <p>Sección del Alumno:</p>
+    </ion-label>
+    <h5 class="ion-text-center">{{estudiante.seccion}}</h5>
+  </div>
+  <BR>
+  <BR>
+  <BR>
+  <h6 class="ion-text-center">Escanear QR</h6>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      
+
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera" color="light"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+</ion-content>
