@@ -24,13 +24,25 @@
     </ion-label>
     <h5 class="ion-text-center">{{estudiante.seccion}}</h5>
   </div>
-  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" [routerLink]="['/inicsesion']">
+  <ion-item>
+    <ion-label class="ion-text-center">
+ <p>Seleccione una Clase</p>
+  </ion-label>
+</ion-item>
+    <ion-select class="ion-text-center" value="App Movil" multiple="false">
+      <ion-select-option value="peperoni">Calidad Soft.</ion-select-option>
+      <ion-select-option value="hawaii">App Movil</ion-select-option>
+      <ion-select-option value="hawaii">Ingles Intermedio</ion-select-option>
+      <ion-select-option value="hawaii">Arquitectura</ion-select-option>
+    </ion-select>
+
+  <ion-button  expand="block" fill="clear" shape="round" [routerLink]="['/inicsesion']">
     Cerrar Sesión
   </ion-button>
   <BR>
   <h6 class="ion-text-center">Escanear QR</h6>
     <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button (click)="onClick()">
+    <ion-fab-button>
       <ion-icon name="camera" color="light"></ion-icon>
     </ion-fab-button>
   </ion-fab>
