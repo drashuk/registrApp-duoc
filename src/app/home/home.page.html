@@ -6,7 +6,7 @@
 
 <ion-content>
   <br>
-  <ion-title size="large" style="text-align: center">Bienvenid@, {{nombre}} </ion-title>
+  
   <br>
   <ion-img src="assets/img/avatar.jpg" style="width:150px center; height:150px"></ion-img>
   <br>
@@ -35,15 +35,12 @@
       <ion-select-option value="hawaii">Ingles Intermedio</ion-select-option>
       <ion-select-option value="hawaii">Arquitectura</ion-select-option>
     </ion-select>
-
   <ion-button  expand="block" fill="clear" shape="round" [routerLink]="['/inicsesion']">
     Cerrar Sesión
   </ion-button>
-  <BR>
-  <h6 class="ion-text-center">Escanear QR</h6>
     <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button>
-      <ion-icon name="camera" color="light"></ion-icon>
+      <ion-icon name="qr-code-outline" color="dark"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   
