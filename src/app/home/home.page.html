@@ -3,24 +3,22 @@
     <ion-title>Registro Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <br>
-  
   <br>
   <ion-img src="assets/img/avatar.jpg" style="width:150px center; height:150px"></ion-img>
   <br>
   <div *ngFor="let estudiante of listado">
     <ion-label class="ion-text-center">
-      <p>Nombre del Alumno:</p>
+      <p>Nombre Completo</p>
     </ion-label>
     <h5 class="ion-text-center">{{estudiante.nombre}}</h5>
     <ion-label class="ion-text-center">
-      <p>Sede del Alumno:</p>
+      <p>Sede DuocUC</p>
     </ion-label>
     <h5 class="ion-text-center">{{estudiante.sede}}</h5>
     <ion-label class="ion-text-center">
-      <p>Sección del Alumno:</p>
+      <p>Sección Inscrita</p>
     </ion-label>
     <h5 class="ion-text-center">{{estudiante.seccion}}</h5>
   </div>
